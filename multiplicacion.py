@@ -1,11 +1,13 @@
 import math 
-lista = []
+def factorizacion(numero):
+    lista = []
 
-numero1 = int(input("Ingrese un numero: "))
+    for i in range(1, numero + 1):
+        lista.append(i)
+        
+    resultado = math.prod(lista)
+    return resultado
 
-for i in range(1, numero1 + 1):
-
-    lista.append(i)
-
-result = math.prod(lista)
-print("La factorizacion de",numero1,"es",result)
+numero1 = int(input("Ingrese un numero"))
+resultado_factorial = factorizacion(numero1)
+print ("La factorizacion de", numero1, "es", resultado_factorial)
